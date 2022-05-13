@@ -1,17 +1,34 @@
+/* body */
 #home {
     display: flex;
 }
 
+/* Dropdown */
 #chapter-dropdown {
-    width: 20em;
+    width: 25em;
+    height: 100vh;
     border-right: 2px solid black;
     margin-right: 2em;
+    overflow-y: auto;
 }
 
 #dropdown-title {
     text-align: center;
+    text-decoration: underline;
 }
 
+.chapter-name {
+    padding: 1em;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 2px solid black;
+    cursor: pointer;
+}
+    
+/* Main window */
 #main-window {
     display: flex;
     flex-direction: column;
