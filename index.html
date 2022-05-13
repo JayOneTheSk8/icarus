@@ -8,8 +8,8 @@
 </head>
 <body>
     <div id="home">
-        <div id="chapter-dropdown">
-            <h2 id="dropdown-title">Icarus Chapters</h2>
+        <div id="chapter-dropdown" class="chapter-dropdown">
+            <h2 id="dropdown-title" class="dropdown-title">Icarus Chapters</h2>
             
             <div id="dark-mode-controls">
                 <label id="dark-mode-label" for="dark-mode-button">Dark Mode?</label>
@@ -21,8 +21,18 @@
 
         <div id="main-window">
             <h1 id="document-title"></h1>
+
+            <div id="chapter-select-container" class="chapter-select-container">
+                <div id="dark-mode-controls-mobile">
+                    <label id="dark-mode-label-mobile" for="dark-mode-button-mobile">Dark Mode?</label>
+                    <input id="dark-mode-button-mobile" type="checkbox" />
+                </div>
+
+                <select id="chapter-select" name="chapter-select"></select>
+            </div>
+
             <div id="document-display-container">
-                <iframe id="document-display"></iframe>
+                <iframe id="document-display" class="document-display"></iframe>
             </div>
         </div>
     </div>

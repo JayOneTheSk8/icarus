@@ -4,12 +4,15 @@
 }
 
 /* Dropdown */
-#chapter-dropdown {
+.chapter-dropdown {
     width: 25em;
     height: 100vh;
     border-right: 2px solid black;
     margin-right: 2em;
     overflow-y: auto;
+}
+.chapter-dropdown-mobile {
+    display: none;
 }
 
 #dropdown-title {
@@ -27,7 +30,29 @@
     border: 2px solid black;
     cursor: pointer;
 }
-    
+
+/* Chapter Select */
+.chapter-select-container-mobile {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.chapter-select-container {
+    display: none;
+}
+
+#chapter-select {
+    outline: none;    
+    width: 21em;
+    height: 4vh;
+    margin-bottom: 2vh;
+}
+
+.chapter-option {
+
+}
+
 /* Main window */
 #main-window {
     display: flex;
@@ -40,14 +65,26 @@
     justify-content: center;
 }
 
-#document-title {
+.document-title {
     font-size: 4vh;
     font-weight: 600;
     margin: 2vh 0vh;
 }
 
-#document-display {
+.document-title-mobile {
+    font-size: 4vh;
+    font-weight: 600;
+    margin: 2vh 0vh;
+    text-align: center;
+}
+
+.document-display {
     height: 91vh;
+    width: 53em;
+}
+
+.document-display-mobile {
+    height: 85vh;
     width: 53em;
 }
 
@@ -72,4 +109,23 @@
 
 .dark-mode {
     background-color: #a9a9a9;
+}
+
+/* Mobile Dark Mode */
+
+#dark-mode-controls-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dark-mode-label-mobile {
+    font-weight: 600;
+    margin-right: 1em;
+    font-size: 1.5em;
+}
+
+#dark-mode-button-mobile {
+    width: 2em;
+    height: 1.5em;
 }
