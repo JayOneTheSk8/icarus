@@ -23,7 +23,7 @@
 .chapter-name {
     padding: 1em;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: bold;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -47,11 +47,11 @@
     width: 21em;
     height: 4vh;
     margin-bottom: 2vh;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .chapter-option {
-    font-weight: 600;
+    font-weight: bold;
 }
 
 /* Main window */
@@ -68,13 +68,13 @@
 
 .document-title {
     font-size: 4vh;
-    font-weight: 600;
+    font-weight: bold;
     margin: 2vh 0vh;
 }
 
 .document-title-mobile {
     font-size: 4vh;
-    font-weight: 600;
+    font-weight: bold;
     margin: 2vh 0vh;
     text-align: center;
 }
@@ -98,7 +98,7 @@
 }
 
 #dark-mode-label {
-    font-weight: 600;
+    font-weight: bold;
     margin-right: 1em;
     font-size: 1.5em;
 }
@@ -121,7 +121,7 @@
 }
 
 #dark-mode-label-mobile {
-    font-weight: 600;
+    font-weight: bold;
     margin-right: 1em;
     font-size: 1.5em;
 }
