@@ -3,6 +3,10 @@ import chapters from "./chapters"
 const currentChapterTitle = document.getElementById('document-title')
 const currentDocumentIFrame = document.getElementById('document-display')
 const chapterNamesList = document.getElementById('chapter-list')
+const body = document.getElementById('home')
+const darkModeButton = document.getElementById('dark-mode-button')
+
+darkModeButton.onchange = (e) => body.className = e.target.checked ? "dark-mode" : ""
 
 const chapterClickFunc = (chapterUrl) => {
     return (e) => {

@@ -48,5 +48,28 @@
 
 #document-display {
     height: 91vh;
-    width: 55em;
+    width: 53em;
+}
+
+/* Dark Mode */
+
+#dark-mode-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dark-mode-label {
+    font-weight: 600;
+    margin-right: 1em;
+    font-size: 1.5em;
+}
+
+#dark-mode-button {
+    width: 2em;
+    height: 1.5em;
+}
+
+.dark-mode {
+    background-color: #a9a9a9;
 }
