@@ -1,0 +1,35 @@
+#home {
+    display: flex;
+}
+
+#chapter-dropdown {
+    width: 20em;
+    border-right: 2px solid black;
+    margin-right: 2em;
+}
+
+#dropdown-title {
+    text-align: center;
+}
+
+#main-window {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#document-display-container {
+    display: flex;
+    justify-content: center;
+}
+
+#document-title {
+    font-size: 4vh;
+    font-weight: 600;
+    margin: 2vh 0vh;
+}
+
+#document-display {
+    height: 91vh;
+    width: 55em;
+}
