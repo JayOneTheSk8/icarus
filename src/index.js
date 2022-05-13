@@ -2,6 +2,7 @@ import chapters from "./chapters"
 
 // Constants
 const WINDOW_LIMIT = 1105
+const chapterSrcMap = {}
 
 // Elements
 const body = document.getElementById('home')
@@ -12,6 +13,7 @@ const chapterNamesList = document.getElementById('chapter-list')
 
 const chapterDropdown = document.getElementById('chapter-dropdown')
 const chapterSelectContainer = document.getElementById('chapter-select-container')
+const chapterSelect = document.getElementById('chapter-select')
 
 const currentChapterTitle = document.getElementById('document-title')
 const currentDocumentIFrame = document.getElementById('document-display')
@@ -28,6 +30,16 @@ darkModeButton.onchange = (e) => {
 mobileDarkModeButton.onchange = (e) => {
     body.className = e.target.checked ? "dark-mode" : ""
     darkModeButton.checked = e.target.checked
+}
+
+chapterSelect.onchange = (e) => {
+    // Only if the chapter is not already displayed
+    if (currentChapterTitle.innerText !== e.target.value) {
+        // Set the current iframe's src to the chapter's url
+        currentDocumentIFrame.src = chapterSrcMap[e.target.value]
+        // Set the title
+        currentChapterTitle.innerText = e.target.value
+    }
 }
 
 // Functions
@@ -47,6 +59,8 @@ const chapterClickFunc = (chapterUrl) => {
             currentDocumentIFrame.src = chapterUrl
             // Set the title
             currentChapterTitle.innerText = e.target.innerText
+            // Set correct value in select
+            chapterSelect.value = e.target.innerText
         }
     }
 }
@@ -75,6 +89,20 @@ for (const chapter of chapters) {
     // Set onclick function and add to list
     chapEl.onclick = chapterClickFunc(chapter.url)
     chapterNamesList.appendChild(chapEl)
+
+    // Add select option
+    const chapOpt = document.createElement('option')
+
+    // Use option class name and insert title
+    chapOpt.className = 'chapter-option'
+    chapOpt.innerText = chapter.title
+
+    // Set value and add src to map for onchange function
+    chapOpt.value = chapter.title
+    chapterSrcMap[chapter.title] = chapter.url
+
+    // Add to chapter select
+    chapterSelect.appendChild(chapOpt)
 }
 
 // Start on chapter 1

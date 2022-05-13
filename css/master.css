@@ -47,10 +47,11 @@
     width: 21em;
     height: 4vh;
     margin-bottom: 2vh;
+    font-weight: 600;
 }
 
 .chapter-option {
-
+    font-weight: 600;
 }
 
 /* Main window */
