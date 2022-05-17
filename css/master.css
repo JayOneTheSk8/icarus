@@ -80,12 +80,12 @@
 }
 
 .document-display {
-    height: 91vh;
+    height: 85vh;
     width: 53em;
 }
 
 .document-display-mobile {
-    height: 85vh;
+    height: 83vh;
     width: 53em;
 }
 
@@ -129,4 +129,14 @@
 #dark-mode-button-mobile {
     width: 2em;
     height: 1.5em;
+}
+
+#audio-controls {
+    justify-content: center;
+    display: flex;
+    height: 6vh;
+}
+
+#script-audio {
+    height: 6vh;
 }
