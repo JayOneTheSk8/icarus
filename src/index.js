@@ -3,6 +3,8 @@ import chapters from "./chapters"
 // Constants
 const WINDOW_LIMIT = 1105
 const chapterSrcMap = {}
+const audioSrcMap = {}
+const audioBaseUrl = 'https://docs.google.com/uc?export=download&id='
 
 // Elements
 const body = document.getElementById('home')
@@ -18,8 +20,10 @@ const chapterSelect = document.getElementById('chapter-select')
 const currentChapterTitle = document.getElementById('document-title')
 const currentDocumentIFrame = document.getElementById('document-display')
 
+const scriptAudio = document.getElementById('script-audio')
+
 // Variables
-var usingMobile = false;
+var usingMobile = false
 
 // Event Handlers
 darkModeButton.onchange = (e) => {
@@ -35,6 +39,8 @@ mobileDarkModeButton.onchange = (e) => {
 chapterSelect.onchange = (e) => {
     // Only if the chapter is not already displayed
     if (currentChapterTitle.innerText !== e.target.value) {
+        // If MP3 ID given set audio, else remove it
+        scriptAudio.src = audioSrcMap[e.target.value] ? audioBaseUrl + audioSrcMap[e.target.value] : ""
         // Set the current iframe's src to the chapter's url
         currentDocumentIFrame.src = chapterSrcMap[e.target.value]
         // Set the title
@@ -51,10 +57,12 @@ const changeToMobile = (setMobile) => {
     usingMobile = setMobile
 }
 
-const chapterClickFunc = (chapterUrl) => {
+const chapterClickFunc = (chapterUrl, audioSrc) => {
     return (e) => {
         // Only if the chapter is not already displayed
         if (currentChapterTitle.innerText !== e.target.innerText) {
+            // If MP3 ID given set audio, else remove it
+            scriptAudio.src = audioSrc ? audioBaseUrl + audioSrc : ""
             // Set the current iframe's src to the chapter's url
             currentDocumentIFrame.src = chapterUrl
             // Set the title
@@ -87,7 +95,7 @@ for (const chapter of chapters) {
     chapEl.innerText = chapter.title
 
     // Set onclick function and add to list
-    chapEl.onclick = chapterClickFunc(chapter.url)
+    chapEl.onclick = chapterClickFunc(chapter.url, chapter.mp3Id)
     chapterNamesList.appendChild(chapEl)
 
     // Add select option
@@ -100,6 +108,9 @@ for (const chapter of chapters) {
     // Set value and add src to map for onchange function
     chapOpt.value = chapter.title
     chapterSrcMap[chapter.title] = chapter.url
+
+    // Add audio to audio map
+    audioSrcMap[chapter.title] = chapter.mp3Id
 
     // Add to chapter select
     chapterSelect.appendChild(chapOpt)
