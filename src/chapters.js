@@ -27,7 +27,7 @@ export default [
     {
         title: "Chapter 6: Fi(r)st Fight",
         url: "https://docs.google.com/document/d/e/2PACX-1vTrvTvAeF_BdOmCuwkyn8D24WuvrBdPD7Tngcow0iDQIpKpKSXP1aCIlhV-ffF9gaCQL5fR2hEa_In6/pub?embedded=true",
-        mp3Id: "1S6vfXt_pMbNP8PpWp1rAPtMupIIdYLV0"
+        mp3Id: "1rU5LgrwMnTvQQoRDsPewH-HKzun-R6Te"
     },
     {
         title: "Chapter 7: Prep Time",
