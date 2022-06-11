@@ -32,7 +32,7 @@ export default [
     {
         title: "Chapter 7: Prep Time",
         url: "https://docs.google.com/document/d/e/2PACX-1vRP5eadc5v1dGQy9uHkd3GOCwCFWCmvOeTnzqYsXkVJP6nFcIuZ3NtSx8Saikk2-fZe-MPMzmf7T-pM/pub?embedded=true",
-        mp3Id: "1G4EJ4_A9SVTm6v6GUKIEo7gkiu2yHLWm"
+        mp3Id: "1Wx_xeBgRknaCAe8BCv-gmCzGdXG0tKri"
     },
     {
         title: "Chapter 8: Rush",
