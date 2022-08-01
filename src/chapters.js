@@ -48,5 +48,30 @@ export default [
         title: "Chapter 10: Radiance",
         url: "https://docs.google.com/document/d/e/2PACX-1vQDBUmWUdL431bNlzoXdFesg-xlB263nCv2FcuUqupVe4aQwADikSzJ9nWgojA6lgnEkeyik0-K2xKR/pub?embedded=true",
         mp3Id: "1J-uWZvnqvMHAwRdFG1hzbRLAGgiASY8H"
+    },
+    {
+        title: "Chapter 11: Trial of Steel",
+        url: "https://docs.google.com/document/d/e/2PACX-1vRQrgW68dqgzrVqucl0_4jCAnOPM0VGJB_masspVhZb5S5497Qcj13OtDgvNUigb8uDRM3PXGhkIAyj/pub?embedded=true",
+        mp3Id: "1Nbd2hxH1NF5F-YcIRMYNuoFuGwTpHmo8"
+    },
+    {
+        title: "Chapter 12: Keep Cool and Use Your Head",
+        url: "https://docs.google.com/document/d/e/2PACX-1vRIr94yHXOQT9O_7iAuF0cFi-v6z72e1HgQwRu4A19qAO5FRO9ira0z3tydW-yIzgkPAAujWMqFxDyi/pub?embedded=true",
+        mp3Id: "1W2-ZF_bRhj4C5dUmDnJggmuiK5pT42ae"
+    },
+    {
+        title: "Chapter 13: Kaboom",
+        url: "https://docs.google.com/document/d/e/2PACX-1vTXIG-XXBG5XvpnQcpe7PEh62NO6HUEImQ3qhHkQplkGcNESbV7bgrU18z46c21HD3KC0yHcVUP5mYF/pub?embedded=true",
+        mp3Id: "16qmyRrQM40ZNRKcgEQz7jdIK5BBGHD6r"
+    },
+    {
+        title: "Chapter 14: Sharper Image",
+        url: "https://docs.google.com/document/d/e/2PACX-1vTx39stmnJfCJAgSm4bhuV3BSwvfzkG_1PfZ4x3BWmgqzaJnGzpU_MOzUJqx3Xa8gAwL9Tf0t42XCg3/pub?embedded=true",
+        mp3Id: "1nnghKpcQNp7rpadrbxHUNe_mgaHMN55R"
+    },
+    {
+        title: "Chapter 15: Tougher Than Steel",
+        url: "https://docs.google.com/document/d/e/2PACX-1vQgG49H0u_Fkj4FTFX9Dvy0gJzQLknZCknGeS0S2yRfO2ktN6B6Hid7oxcO_5FJ6fRDquGXYS0rmgo7/pub?embedded=true",
+        mp3Id: "1U2PmcFkb8Mzx7jQTLeLpGKZje_aIqNI-"
     }
 ]
