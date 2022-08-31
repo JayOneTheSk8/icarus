@@ -47,7 +47,7 @@ export default [
     {
         title: "Chapter 10: Radiance",
         url: "https://docs.google.com/document/d/e/2PACX-1vQDBUmWUdL431bNlzoXdFesg-xlB263nCv2FcuUqupVe4aQwADikSzJ9nWgojA6lgnEkeyik0-K2xKR/pub?embedded=true",
-        mp3Id: "1J-uWZvnqvMHAwRdFG1hzbRLAGgiASY8H"
+        mp3Id: "1rf8ROLdB0R1jToYy9H5EBTHIj_lllB9l"
     },
     {
         title: "Chapter 11: Trial of Steel",
